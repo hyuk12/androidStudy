@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- 상단 부분 nav bar-->
+    <LinearLayout
+            android:layout_marginStart="16dp"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <ImageView
+
+                android:src="@drawable/mytube"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+        <TextView
+
+                android:textSize="20dp"
+                android:text="MyTube"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <LinearLayout
+
+                    android:background="#D1CDCD"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/temp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"/>
+                    <TextView
+                            android:layout_gravity="bottom|right"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            android:background="@color/black"
+                            android:textColor="#Fff"
+                            android:text="10:35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:background="#D1CDCD"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/youtube_img"/>
+                    <!--                    app:civ_border_width="2dp"-->
+                    <!--                    app:civ_border_color="#FF000000"/>-->
+
+                    <!--            <ImageView-->
+                    <!--                    android:background="@drawable/youtube_img"-->
+                    <!--                    android:layout_width="50dp"-->
+                    <!--                    android:layout_height="50dp"/>-->
+                    <LinearLayout
+                            android:layout_marginStart="8dp"
+                            android:gravity="center|left"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:textSize="18dp"
+                                android:text="영상의 제목입니다."
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        <TextView
+                                android:text="영상의 부제목입니다."
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                    android:background="#D1CDCD"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/temp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"/>
+                    <TextView
+                            android:layout_gravity="bottom|right"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            android:background="@color/black"
+                            android:textColor="#Fff"
+                            android:text="10:35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:background="#D1CDCD"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/youtube_img"/>
+                    <!--                    app:civ_border_width="2dp"-->
+                    <!--                    app:civ_border_color="#FF000000"/>-->
+
+                    <!--            <ImageView-->
+                    <!--                    android:background="@drawable/youtube_img"-->
+                    <!--                    android:layout_width="50dp"-->
+                    <!--                    android:layout_height="50dp"/>-->
+                    <LinearLayout
+                            android:layout_marginStart="8dp"
+                            android:gravity="center|left"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:textSize="18dp"
+                                android:text="영상의 제목입니다."
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        <TextView
+                                android:text="영상의 부제목입니다."
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                    android:background="#D1CDCD"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/temp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"/>
+                    <TextView
+                            android:layout_gravity="bottom|right"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            android:background="@color/black"
+                            android:textColor="#Fff"
+                            android:text="10:35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:background="#D1CDCD"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/youtube_img"/>
+                    <!--                    app:civ_border_width="2dp"-->
+                    <!--                    app:civ_border_color="#FF000000"/>-->
+
+                    <!--            <ImageView-->
+                    <!--                    android:background="@drawable/youtube_img"-->
+                    <!--                    android:layout_width="50dp"-->
+                    <!--                    android:layout_height="50dp"/>-->
+                    <LinearLayout
+                            android:layout_marginStart="8dp"
+                            android:gravity="center|left"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:textSize="18dp"
+                                android:text="영상의 제목입니다."
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        <TextView
+                                android:text="영상의 부제목입니다."
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
