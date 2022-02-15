@@ -1,43 +1,76 @@
 # androidStudy
 # 2일차 내용 복습
-화면을 그리는 방법
 
-기본적으로 XML 이라는 언어를 사용한다.
-</br>
-</br>DSL (Domain Specific Language) 
-: 어떠한 범주에 특화된 언어 > 안드로이드 화면을 그리기 위해 특화된 언어이다 
+***
+* Layout 의 종류
+  *  상대 레이아웃(RelativeLayout)
+  *  FrameLayout
+* 간단한 앱 화면 출력해보기
+***
 
-> <h2>dp 와 px 의 개념</h2></br>
-> dpi : dot per inch (1인치 안에서 픽셀이 얼마나 많이 있는가 를 나타낸다)
-></br></br>
-> ldpi -> (1인치에 120픽셀)</br>
-> mdpi -> (1인치에 160픽셀)</br>
-> hdpi -> (1인치에 240픽셀)</br>
-> xhdpi -> (1인치에 320픽셀)</br>
-> xxhdpi -> (1인치에 480픽셀)</br>
-> xxxhdpi -> (1인치에 640픽셀)</br>
-></br>
->px = dp * 단말DPI / 기본 160</br>
->dp = px * 기본 160 / 단말DPI</br>
-></br></br>
+```
+상대 레이아웃 이란?
+1. 상대 레이아웃 부모 뷰 기준으로 정렬 하는것 : parent
+2. 상대 레이아웃 부모 뷰 기준으로 중앙 정렬 하는것 : center
 
-</br></br>
-> <h2>view component 란?</h2>
-></br>
 
->1. xml을 직접 타이핑 하는 방식
->2. story board에서 드래그앤 드랍 방식으로 그려볼 수 있다.</br>
-(xml이 자동으로 코딩이 된다.)
-></br></br>
->view component란</br>
->화면을 그리는 각각의 요소 입니다.</br>
->글, 이미지, 토글버튼,버튼,텍스트 버튼등등..
-></br></br>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-</br></br>
-><h2>LinearLayout 의 개념</h2>
-></br>
+    <TextView
+            android:layout_centerInParent="true"
+            android:background="@color/purple_200"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
 
->1. 부모가 될 수 있는 컴포넌트
->2. 자식만 될 수 있는 컴포넌트
-></br></br>
+    
+    <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+</RelativeLayout>
+```
+
+```
+ 상대 레이아웃 에서 특정 뷰 기준으로 배치 하는 방법은
+ to_ , of 가 들어가는 속성을 사용하면 된다.
+ 
+ 이때 html 에서 처럼 식별자용 ID를 써야한다.
+ 
+ <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <!-- 식별자 id   -->
+    <TextView
+            android:id="@+id/view1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/purple_200"
+            android:layout_centerInParent="true"/>
+
+    <TextView
+            android:layout_toLeftOf="@id/view1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/teal_200"
+            android:layout_centerInParent="true"/>
+```
+
+***
+FrameLayout 을 이용 하는 경우!
+LinearLayout 은 안의 뷰컴포넌트 끼리 합치는 것이 불가능 하다.
+</br>하지만 이를 써야 되고 곂치고 싶을 때 frameLayout을 이용한다
+***
